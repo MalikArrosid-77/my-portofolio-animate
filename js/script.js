@@ -10,7 +10,7 @@ $('.page-scroll').on('click', function(e) {
 
     // pindahkan scroll
     $('html').animate({
-        scrollTop: elemenTujuan.offset().top - 50
+        scrollTop: elemenTujuan.offset().top - 10
     }, 1100, 'easeInOutExpo');
 
     e.preventDefault();
@@ -18,40 +18,40 @@ $('.page-scroll').on('click', function(e) {
 
 // parallax effect
 // about
-$(window).on('load', function() {
-    $('.leftParagraph').addClass('paragraphAppears');
-    $('.rightParagraph').addClass('paragraphAppears');
-});
+// $(window).on('load', function() {
+//     $('.leftParagraph').addClass('paragraphAppears');
+//     $('.rightParagraph').addClass('paragraphAppears');
+// });
 
 // projects
-$(window).scroll(function() {
-    let windowScroll = $(this).scrollTop();
+// $(window).scroll(function() {
+//     let windowScroll = $(this).scrollTop();
 
-    // jumbotron
-    $('.jumbotron img').css({
-        'transform' : 'translate(0px, '+ windowScroll/6 +'%)'
-    });
+//     // jumbotron
+//     $('.jumbotron img').css({
+//         'transform' : 'translate(0px, '+ windowScroll/6 +'%)'
+//     });
 
-    $('.jumbotron h1').css({
-        'transform' : 'translate(0px, '+ windowScroll/4 +'%)'
-    });
+//     $('.jumbotron h1').css({
+//         'transform' : 'translate(0px, '+ windowScroll/4 +'%)'
+//     });
 
-    $('.jumbotron p').css({
-        'transform' : 'translate(0px, '+ windowScroll/2 +'%)'
-    });
+//     $('.jumbotron p').css({
+//         'transform' : 'translate(0px, '+ windowScroll/2 +'%)'
+//     });
 
-    // $('.jumbotron svg').css({
-    //     'transform' : 'translate(0px, '+ windowScroll/8 + '%)'
-    // });
+//     // $('.jumbotron svg').css({
+//     //     'transform' : 'translate(0px, '+ windowScroll/8 + '%)'
+//     // });
 
-    // projects
-    if( windowScroll > $('.projects').offset().top - 200 ) {
-        $('.projects .card').each(function(i) {
-            setTimeout(function() {
-                $('.projects .card').eq(i).addClass('appears');
-            }, 300 * (i + 1));
-        });
+//     // projects
+//     if( windowScroll > $('.projects').offset().top - 200 ) {
+//         $('.projects .card').each(function(i) {
+//             setTimeout(function() {
+//                 $('.projects .card').eq(i).addClass('appears');
+//             }, 300 * (i + 1));
+//         });
         
-    }
+//     }
 
-});
+// });
