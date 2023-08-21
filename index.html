@@ -137,6 +137,40 @@
                     </div>
                 </div>
             </div>
+
+            <section id="my-keyboards">
+                <div class="container">
+                    <div class="row text-center mb-3">
+                        <div class="col">
+                            <h2>My Keyboards</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">ASUS ROG Claymore</h4>
+                                <img src="img/keyboards/asus-rog-claymore.png" alt="ASUS-ROG-Claymore" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">Tesoro Gram Spectrum</h4>
+                                <img src="img/keyboards/tesoro-gram-spectrum.png" alt="Tesoro-Gram-Spectrum" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">ASUS ROG Thunder</h4>
+                                <img src="img/keyboards/asus-rog-rgb.png" alt="ASUS-ROG-Claymore" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
                     d="M0,96L48,85.3C96,75,192,53,288,69.3C384,85,480,139,576,181.3C672,224,768,256,864,229.3C960,203,1056,117,1152,80C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -324,6 +358,15 @@
                     })
                     .catch(error => console.error('Error!', error.message))
             })
+        </script>
+
+        <!-- Vanilla Tilt.js Script -->
+        <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+                max: 35,
+                speed: 1000,
+            });
         </script>
     </body>
 </html>
